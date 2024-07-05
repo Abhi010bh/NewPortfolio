@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.y{
+  font-family: 'Gothvetica Caps', sans-serif;
+  font-size: 48px;
+}
+.Cove{
+  font-family: 'Coves';
+  font-size: 48px;
+}
+ 
