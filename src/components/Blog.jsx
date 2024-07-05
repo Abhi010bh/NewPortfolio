@@ -79,7 +79,7 @@ const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
 
     return (
-        <div className='bg-gray-600'>
+        <div className='bg-gray-800'>
             <div ref={container} className='gallery'>
                 <Column images={[images[0], images[1], images[2]]} y={y} />
                 <Column images={[images[3], images[4], images[5]]} y={y2} />
