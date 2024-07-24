@@ -7,8 +7,26 @@ import Cover  from './components/Cover';
 import {Header} from './components/Header';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Blog } from './components/Blog';
+import { HorizontalCarousel } from './components/HorizontalCarousel';
+import Lenis from 'lenis';
 
 function App() {
+
+  
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+
+   
+    requestAnimationFrame(raf);
+    
+
+   
+}, []);
 
   const boxVariants = {
     hidden: { opacity: 0, y: -50 },
@@ -35,8 +53,10 @@ function App() {
     
       <Cover />
       <Blog />
+      <HorizontalCarousel /> 
       <Menu />
-        
+     
+      
         
       </div>
       </BrowserRouter>

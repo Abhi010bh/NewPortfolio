@@ -42,7 +42,7 @@ export const Menu = () => {
 
   return (
     <>
-      <div className="text-white  flex flex-col justify-center items-center overflow-hidden relative">
+      <div className="text-white flex flex-col justify-center items-center overflow-hidden relative">
         <motion.div
           className="cursor"
           variants={variants}
